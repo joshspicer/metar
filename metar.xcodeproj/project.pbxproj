@@ -44,7 +44,7 @@
 		036ACB59A000000000000001 /* Embed Watch Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/PlugIns";
+			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 				036ACB50A000000000000001 /* metar Complications.appex in Embed Watch Extensions */,

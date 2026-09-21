@@ -178,6 +178,16 @@ struct ContentView: View {
                     Text(viewModel.selectedAirport)
                         .font(.headline)
                     Spacer()
+                    Picker("Airport", selection: Binding(
+                        get: { viewModel.selectedAirport },
+                        set: { viewModel.selectAirport($0) }
+                    )) {
+                        ForEach(AirportStore.airports, id: \.self) { airport in
+                            Text(airport).tag(airport)
+                        }
+                    }
+                    .pickerStyle(.navigationLink)
+                    .accessibilityLabel("Choose airport")
                     Button {
                         Task { await viewModel.load() }
                     } label: {
@@ -202,15 +212,6 @@ struct ContentView: View {
             }
         }
         .padding()
-        .contextMenu {
-            ForEach(AirportStore.airports, id: \.self) { airport in
-                Button {
-                    viewModel.selectAirport(airport)
-                } label: {
-                    Label(airport, systemImage: airport == viewModel.selectedAirport ? "checkmark" : "airplane")
-                }
-            }
-        }
         .task {
             viewModel.startAutomaticRefresh()
         }
