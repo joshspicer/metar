@@ -2,7 +2,11 @@
 set -e
 
 GIT_COMMIT=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
-OUTPUT_FILE="${CI_WORKSPACE:-$(pwd)}/metar Watch App/GitCommit.swift"
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+REPOSITORY_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
+WORKSPACE_ROOT="${CI_WORKSPACE:-$REPOSITORY_ROOT}"
+OUTPUT_FILE="$WORKSPACE_ROOT/metar Watch App/GitCommit.swift"
 
 cat > "$OUTPUT_FILE" << EOF
 //
