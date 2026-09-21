@@ -59,6 +59,7 @@
 		036ACB363060B8C100675FEA /* metar Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metar Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB51A000000000000001 /* metar Complications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "metar Complications.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB53A000000000000001 /* METARComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METARComplication.swift; sourceTree = "<group>"; };
+		036ACB61A000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -110,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				036ACB53A000000000000001 /* METARComplication.swift */,
+				036ACB61A000000000000001 /* Info.plist */,
 			);
 			path = "metar Complications";
 			sourceTree = "<group>";
@@ -503,11 +505,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "METAR Complications";
-				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				INFOPLIST_FILE = "metar Complications/Info.plist";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.complications;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.watchkitapp.complications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -526,11 +526,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "METAR Complications";
-				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				INFOPLIST_FILE = "metar Complications/Info.plist";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.complications;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.watchkitapp.complications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
