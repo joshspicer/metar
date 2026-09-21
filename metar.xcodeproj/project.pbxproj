@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		036ACB373060B8C100675FEA /* metar Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 036ACB363060B8C100675FEA /* metar Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		036ACB50A000000000000001 /* metar Complications.appex in Embed Watch Extensions */ = {isa = PBXBuildFile; fileRef = 036ACB51A000000000000001 /* metar Complications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		036ACB54A000000000000001 /* METARComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB53A000000000000001 /* METARComplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -17,6 +19,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 036ACB353060B8C100675FEA;
 			remoteInfo = "metar Watch App";
+		};
+		036ACB5DA000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 036ACB2A3060B8C100675FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 036ACB56A000000000000001;
+			remoteInfo = "metar Complications";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,11 +41,24 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		036ACB59A000000000000001 /* Embed Watch Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/PlugIns";
+			dstSubfolderSpec = 13;
+			files = (
+				036ACB50A000000000000001 /* metar Complications.appex in Embed Watch Extensions */,
+			);
+			name = "Embed Watch Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		036ACB303060B8C100675FEA /* metar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB363060B8C100675FEA /* metar Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metar Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		036ACB51A000000000000001 /* metar Complications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "metar Complications.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		036ACB53A000000000000001 /* METARComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METARComplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		036ACB58A000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				036ACB3A3060B8C100675FEA /* metar Watch App */,
+				036ACB52A000000000000001 /* metar Complications */,
 				036ACB313060B8C100675FEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +101,17 @@
 			children = (
 				036ACB303060B8C100675FEA /* metar.app */,
 				036ACB363060B8C100675FEA /* metar Watch App.app */,
+				036ACB51A000000000000001 /* metar Complications.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		036ACB52A000000000000001 /* metar Complications */ = {
+			isa = PBXGroup;
+			children = (
+				036ACB53A000000000000001 /* METARComplication.swift */,
+			);
+			path = "metar Complications";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +143,12 @@
 				036ACB323060B8C100675FEA /* Sources */,
 				036ACB333060B8C100675FEA /* Frameworks */,
 				036ACB343060B8C100675FEA /* Resources */,
+				036ACB59A000000000000001 /* Embed Watch Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				036ACB5EA000000000000001 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				036ACB3A3060B8C100675FEA /* metar Watch App */,
@@ -118,6 +159,23 @@
 			productName = "metar Watch App";
 			productReference = 036ACB363060B8C100675FEA /* metar Watch App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		036ACB56A000000000000001 /* metar Complications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036ACB5CA000000000000001 /* Build configuration list for PBXNativeTarget "metar Complications" */;
+			buildPhases = (
+				036ACB57A000000000000001 /* Sources */,
+				036ACB58A000000000000001 /* Frameworks */,
+				036ACB55A000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metar Complications";
+			productName = "metar Complications";
+			productReference = 036ACB51A000000000000001 /* metar Complications.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,6 +211,7 @@
 			targets = (
 				036ACB2F3060B8C100675FEA /* metar */,
 				036ACB353060B8C100675FEA /* metar Watch App */,
+				036ACB56A000000000000001 /* metar Complications */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +231,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		036ACB55A000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -182,6 +248,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		036ACB57A000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036ACB54A000000000000001 /* METARComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -189,6 +263,11 @@
 			isa = PBXTargetDependency;
 			target = 036ACB353060B8C100675FEA /* metar Watch App */;
 			targetProxy = 036ACB383060B8C100675FEA /* PBXContainerItemProxy */;
+		};
+		036ACB5EA000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 036ACB56A000000000000001 /* metar Complications */;
+			targetProxy = 036ACB5DA000000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,8 +397,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				ENABLE_PREVIEWS = YES;
+				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = metar;
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,8 +432,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				ENABLE_PREVIEWS = YES;
+				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = metar;
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,10 +465,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				INFOPLIST_KEY_CFBundleDisplayName = metar;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "METAR - Free Aviation WX";
 				SDKROOT = iphoneos;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -399,15 +483,62 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				INFOPLIST_KEY_CFBundleDisplayName = metar;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "METAR - Free Aviation WX";
 				SDKROOT = iphoneos;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036ACB5AA000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7C8DEK852;
+				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR Complications";
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.complications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		036ACB5BA000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7C8DEK852;
+				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "METAR Complications";
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.complications;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
 		};
@@ -437,6 +568,15 @@
 			buildConfigurations = (
 				036ACB483060B8C200675FEA /* Debug */,
 				036ACB493060B8C200675FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036ACB5CA000000000000001 /* Build configuration list for PBXNativeTarget "metar Complications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036ACB5AA000000000000001 /* Debug */,
+				036ACB5BA000000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
