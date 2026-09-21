@@ -55,7 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		036ACB303060B8C100675FEA /* metar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036ACB303060B8C100675FEA /* metar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = metar.app; path = "METAR - Free Aviation WX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB363060B8C100675FEA /* metar Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metar Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB51A000000000000001 /* metar Complications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "metar Complications.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036ACB53A000000000000001 /* METARComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METARComplication.swift; sourceTree = "<group>"; };
@@ -395,14 +395,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				ENABLE_PREVIEWS = YES;
-				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
-				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,14 +431,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
 				ENABLE_PREVIEWS = YES;
-				CODE_SIGN_ENTITLEMENTS = "metar Watch App/metar Watch App.entitlements";
-				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,8 +469,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar;
 				PRODUCT_NAME = "METAR - Free Aviation WX";
@@ -485,8 +488,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				INFOPLIST_KEY_CFBundleDisplayName = "METAR - Free Aviation WX";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_CFBundleName = "METAR - Free Aviation WX";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar;
 				PRODUCT_NAME = "METAR - Free Aviation WX";
@@ -501,11 +505,12 @@
 		036ACB5AA000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
 				INFOPLIST_FILE = "metar Complications/Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.watchkitapp.complications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,11 +527,12 @@
 		036ACB5BA000000000000001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7C8DEK852;
-				CODE_SIGN_ENTITLEMENTS = "metar Complications/metar Complications.entitlements";
 				INFOPLIST_FILE = "metar Complications/Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshspicer.metar.watchkitapp.complications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
